@@ -1,0 +1,23 @@
+server:
+    port: 8080
+oidc:
+    issuer-uri: https://dev-581339.okta.com/oauth2/default
+    client-id: 0oaxkak0FE4IcbsNm4x5
+    client-secret: TBDAHBI2C5X-T2YNIwNfaIIKnvfyp6q24oIhDwMz
+spring:
+    jackson:
+        serialization:
+            write-dates-as-timestamps: false
+    security:
+        oauth2:
+            client:
+                provider:
+                    okta:
+                        issuer-uri: ${oidc.issuer-uri}
+                registration:
+                    okta:
+                        client-id: ${oidc.client-id}
+                        client-secret: ${oidc.client-secret}
+            resourceserver:
+                jwt:
+                    issuer-uri: ${oidc.issuer-uri}

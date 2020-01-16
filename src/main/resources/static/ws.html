@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Renner notificatie client
+    </title>
+</head>
+<body>
+<script>
+    var socket = new WebSocket('ws://localhost:8080/ws/renners');
+    socket.addEventListener('message', function (event) {
+        window.alert('Bericht van server: ' + event.data);
+    });
+</script>
+</body>
+</html>
