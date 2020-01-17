@@ -1,4 +1,4 @@
-package com.example.springtourapp.endpoint;
+package com.example.springtourapp.controller;
 
 import java.net.*;
 

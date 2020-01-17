@@ -1,4 +1,4 @@
-package com.example.springtourapp.endpoint;
+package com.example.springtourapp.controller;
 
 import java.net.*;
 
@@ -29,9 +29,13 @@ public class RennerController {
 
 
 	@GetMapping
-	//@RequestMapping(produces = MediaType.APPLICATION_STREAM_JSON_VALUE)
 	Publisher<Renner> getAll() {
 		return this.m_rennerService.all();
+	}
+
+	@GetMapping(path = "/ploeg/{ploeg}/gestart/{gestart}")
+	Publisher<Renner> getAllGestartByPloeg(@PathVariable("ploeg") Long ploeg, @PathVariable("gestart") Boolean gestart){
+		return this.m_rennerService.allGestartByPloeg(ploeg,gestart);
 	}
 
 

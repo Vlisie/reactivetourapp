@@ -1,3 +1,4 @@
+/*
 package com.example.springtourapp;
 
 import org.springframework.context.annotation.Bean;
@@ -5,10 +6,12 @@ import org.springframework.security.config.annotation.web.reactive.EnableWebFlux
 import org.springframework.security.config.web.server.ServerHttpSecurity;
 import org.springframework.security.web.server.SecurityWebFilterChain;
 
+*/
 /**
  * @author <a href="mailto:tes.van.der.vlist@itris.nl">Tes van der Vlist</a>
  * Created on 16-1-20.
- */
+ *//*
+
 
 @EnableWebFluxSecurity
 public class SecurityConfiguration {
@@ -25,3 +28,4 @@ public class SecurityConfiguration {
 				.jwt().and().and().build();
 	}
 }
+*/

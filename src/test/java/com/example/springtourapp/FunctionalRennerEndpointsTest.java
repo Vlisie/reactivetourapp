@@ -8,7 +8,7 @@ import org.springframework.context.annotation.*;
 import org.springframework.test.context.*;
 import org.springframework.test.web.reactive.server.*;
 
-import com.example.springtourapp.endpoint.*;
+import com.example.springtourapp.controller.*;
 import com.example.springtourapp.handler.*;
 import com.example.springtourapp.service.*;
 

@@ -29,6 +29,8 @@ public class RennerService {
 		return this.m_rennerRepository.findAll();
 	}
 
+	public Flux<Renner> allGestartByPloeg(Long ploeg, Boolean gestart) {return this.m_rennerRepository.findAllByPloegAndGestart(ploeg, gestart);}
+
 	public Mono<Renner> get(Long id) {
 		return this.m_rennerRepository.findById(id);
 	}
