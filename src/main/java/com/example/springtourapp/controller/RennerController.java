@@ -17,7 +17,7 @@ import reactor.core.publisher.*;
  */
 @RestController
 @RequestMapping(value = "/renners", produces = MediaType.APPLICATION_JSON_VALUE)
-//@org.springframework.context.annotation.Profile("classis")
+@org.springframework.context.annotation.Profile("classis")
 public class RennerController {
 
 	private final MediaType mediaType = MediaType.APPLICATION_JSON;

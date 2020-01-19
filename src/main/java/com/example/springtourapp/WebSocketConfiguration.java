@@ -51,7 +51,7 @@ class WebSocketConfiguration {
 	) {
 		Flux<RennerCreatedEvent> publish = Flux
 			.create(eventPublisher)
-			.share();
+			.publish().autoConnect();
 		return session -> {
 			Flux<WebSocketMessage> messageFlux = publish
 				.map(evt -> {
