@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '2.2.2.RELEASE'
+	id 'org.springframework.boot' version '2.2.3.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 	id 'java'
 	id 'org.flywaydb.flyway' version '6.1.4'
@@ -48,6 +48,7 @@ dependencies {
 	testImplementation 'org.springframework.boot.experimental:spring-boot-test-autoconfigure-r2dbc'
 	testImplementation 'io.projectreactor:reactor-test'
 	testImplementation 'org.springframework.security:spring-security-test'
+	implementation 'org.junit.jupiter:junit-jupiter'
 }
 
 dependencyManagement {

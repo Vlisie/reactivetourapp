@@ -69,7 +69,7 @@ class WebSocketConfigurationTest {
 			this.webClient
 				.post()
 				.uri("http://localhost:8080/renners")
-				.body(BodyInserters.fromValue(p))
+				.body(BodyInserters.fromObject(p))
 				.retrieve()
 				.bodyToMono(String.class)
 				.thenReturn(p);
